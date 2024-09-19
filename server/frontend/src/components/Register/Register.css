@@ -3,9 +3,10 @@
   flex-direction: column;
   margin: auto;
   margin-top: 2%;
-  background-color: darkturquoise;
+  background-color: #00ced1;
   min-width: 350px;
   width: 30%;
+  border-radius: 18px;
 }
 
 .inputs{
@@ -21,9 +22,12 @@
 }
 
 .input_field{
-  height:40px;
-  width:200px;
+  height:45px;
+  width:250px;
   margin:.5cm;
+  border-radius: 8px;
+  border: none;
+  padding: 0 8px;
   font-size: medium;
 }
 
@@ -39,7 +43,8 @@
   margin-right: 30%;
   cursor: pointer;
   font-size: large;
-  color: rgb(97, 64, 128);
+  font-weight:500;
+  color: black;
   border-radius: 10px;
   height:50px;
 }
@@ -50,12 +55,13 @@
 
 .header{
   font: 4em sans-serif;
+  padding: 10px;
   color: white;
   margin: .5cm;
 }
 
 .img_icon{
-  width:40px;
+  width:45px;
   margin:.1cm;
   background-color:#0C9;
   color:#FFF;
