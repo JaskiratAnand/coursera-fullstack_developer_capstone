@@ -13,6 +13,11 @@ img{
   margin-bottom: 1%;
 }
 
+.card-text {
+    text-align: justify;
+    padding: 0 10px;
+}
+
 .row{
   display: flex;  
   flex: 1;
@@ -39,6 +44,17 @@ img{
   text-align: center;
   margin:20px;
   padding:5px;
+}
+
+.job-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.email {
+    text-decoration: underline;
+    text-align: center;
+    color: blue;
 }
 
 .homepage_links{
