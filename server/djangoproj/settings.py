@@ -28,14 +28,16 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+HOST_URL = 'https://jaskiratanan-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+
 ALLOWED_HOSTS=[
-    'localhost',
-    'https://jaskiratanan-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/', 
-    '127.0.0.1'
+    'localhost', 
+    '127.0.0.1',
+    HOST_URL
+
 ]
 CSRF_TRUSTED_ORIGINS=[
-    'https://jaskiratanan-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/',
-    'https://jaskiratanan-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai'
+    HOST_URL
 ]
 
 REST_FRAMEWORK = {
