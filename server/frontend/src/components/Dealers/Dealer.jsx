@@ -36,20 +36,19 @@ const Dealer = () => {
     }
   }
 
-  const get_reviews = async ()=>{
-    const res = await fetch(reviews_url, {
-      method: "GET"
-    });
-    const retobj = await res.json();
-    
-    if(retobj.status === 200) {
-      if(retobj.reviews.length > 0){
-        setReviews(retobj.reviews)
-      } else {
-        setUnreviewed(true);
-      }
+    const get_reviews = async ()=>{
+        const res = await fetch(reviews_url, {
+            method: "GET"
+        });
+        const retobj = await res.json();
+        if(retobj.status === 200) {
+            if(retobj.reviews.length > 0){
+                setReviews(retobj.reviews)
+            } else {
+                setUnreviewed(true);
+            }
+        }
     }
-  }
 
   const senti_icon = (sentiment)=>{
     let icon = sentiment === "positive"?positive_icon:sentiment==="negative"?negative_icon:neutral_icon;
@@ -61,8 +60,6 @@ const Dealer = () => {
     get_reviews();
     if(sessionStorage.getItem("username")) {
       setPostReview(<a href={post_review}><img src={review_icon} style={{width:'10%',marginLeft:'10px',marginTop:'10px'}} alt='Post Review'/></a>)
-
-      
     }
   },[]);  
 
